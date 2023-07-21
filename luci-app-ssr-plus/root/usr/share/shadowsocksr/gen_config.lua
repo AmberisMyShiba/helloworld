@@ -326,7 +326,8 @@ local tuic = {
         },
 		["local"] = {
 				server = "0.0.0.0:" .. tonumber(local_port),
-				max_packet_size = tonumber(server.tuic_max_package_size)
+				--dual_stack = (server.tuic_dual_stack == "1") and true or false,
+				max_packet_size = server.tuic_max_package_size
 		}
 }
 local config = {}
