@@ -564,7 +564,7 @@ start_shunt() {
 		fi
 		ln_start_bin $(first_type hysteria) hysteria client --config $shunt_config_file
 		shunt_dns_command
-		echolog "shunt:$($(first_type hysteria) version | grep Version | awk '{print "Hysteria2:" $2})' Started!"
+		echolog "shunt:$($(first_type hysteria) version | grep Version | awk '{print "Hysteria2:" $2}') Started!"
 		;;
 	tuic)
 		local chain_shunt_port="30${tmp_shunt_port}"
